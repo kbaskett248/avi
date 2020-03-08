@@ -11,9 +11,9 @@ class AudioPlayer extends React.Component {
         currentTime: 0,
         duration: 0
     }
-    audio = new Audio(this.props.src);
 
     componentDidMount() {
+        this.audio = new Audio(this.props.src);
         this.audio.addEventListener('canplaythrough', this.updateDuration)
         this.audio.addEventListener('ended', () => this.setState({ play: false }));
         this.audio.addEventListener('timeupdate', this.updateTime);
