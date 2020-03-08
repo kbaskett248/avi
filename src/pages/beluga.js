@@ -16,17 +16,18 @@ const Beluga = ({ data }) => (
         <h1>Beluga Whales</h1>
         <div style={{ marginBottom: "1.45rem" }}>
           <Img fluid={data.primaryImage.childImageSharp.fluid}
-            alt="Beluga whale swimming upside down" />
+            alt="Beluga whale head coming out of the water with mouth open" />
         </div>
         <p>
           Beluga whales are adapted to life in the Arctic, so they have physical characteristics that separate them from other ocean creatures. 
-          These include its all-white colour and the absence of a dorsal fin. 
+          These include its all-white colour and the absence of a <a href="https://en.wikipedia.org/wiki/Dorsal_fin" >dorsal fin</a>. 
           Not having a dorsal fin allows them to swim under ice with ease.
         </p>
         <p>
-          Belugas have a distinctive protuberance at the front of their head which houses an echolocation organ called the melon. 
+          Belugas have a distinctive protuberance at the front of their head which houses an <a href="https://en.wikipedia.org/wiki/Animal_echolocation" >echolocation organ</a> called 
+          the <a href="https://en.wikipedia.org/wiki/Melon_(whale)">melon</a>. 
           The beluga's body size is between that of a dolphin and a true whale, with males growing up to 18 feet long and weighing up to 3,530 pounds. 
-          The beluga whale has a stocky body. A large percentage of its weight is blubber, a special type of fat. 
+          The beluga whale has a stocky body. A large percentage of its weight is <a href="https://en.wikipedia.org/wiki/Blubber">blubber</a>, a special type of fat. 
           Its sense of hearing is highly developed and its echolocation allows it to move about and find breathing holes under sheet ice. 
         </p>
         <p>

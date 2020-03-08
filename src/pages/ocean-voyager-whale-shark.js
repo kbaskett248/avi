@@ -16,7 +16,7 @@ const OceanVoyagerWhaleShark = ({ data }) => (
         <h1>The Ocean Voyager Exhibit</h1>
         <div style={{ marginBottom: "1.45rem" }}>
           <Img fluid={data.primaryImage.childImageSharp.fluid}
-            alt="The Ocean Voyager Exhibit" />
+            alt="The Ocean Voyager Exhibit tunnel" />
         </div>
         <p>
           The Ocean Voyager gallery, built by The Home Depot, is home to four whale sharks, four manta rays, and thousands of other fascinating fish. 
@@ -30,11 +30,11 @@ const OceanVoyagerWhaleShark = ({ data }) => (
         <h1>Whale Sharks</h1>
         <div style={{ marginBottom: "1.45rem" }}>
           <Img fluid={data.secondaryImage.childImageSharp.fluid}
-            alt="Beluga whale swimming upside down" />
+            alt="Whale shark swimming in a bright ocean surrounded by fish" />
         </div>
         <p>
-          Despite the resemblance in its name, the whale shark isn’t a whale. 
-          The whale shark is actually the world’s largest fish.  
+          Despite the resemblance in its name, the whale shark isn’t a <a href="https://www.whalefacts.org" >whale</a>. 
+          The whale shark is actually the world’s largest <a href="https://www.whalefacts.org/fish-facts/" >fish</a>.  
           The name whale shark comes from the fact that this species of shark can grow to be as large as some whale species. 
           When fully grown the whale shark can grow to lengths of 40 feet. 
         </p>
@@ -51,7 +51,7 @@ const OceanVoyagerWhaleShark = ({ data }) => (
         <p>
           Whale sharks aren’t active hunters like other species of shark which are known to chase, attack and tear their prey apart with their teeth. 
           Whale sharks are filter feeders meaning they consume food by swimming towards it with their mouth open, engulfing the prey that enters their mouth. 
-          The whale shark diet consists mainly of plankton, krill, shrimp, larvae, and algae.
+          The whale shark diet consists mainly of plankton, <a href="https://www.whalefacts.org/krill-facts/" >krill</a>, shrimp, larvae, and algae.
         </p>
         <p>
           While sharks do not use sound for communication, they are able to detect the vibrations made by sound which can help them locate prey or nearby marine life. 
