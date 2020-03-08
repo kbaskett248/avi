@@ -14,6 +14,7 @@ const IndexPage = () => (
         <p>
           Welcome to the Georgia Aquarium!
         </p>
+        <p><Link to="/fun-ocean-facts/">Fun Facts about the Ocean</Link></p>
         <p><Link to="/beluga/">Beluga Whales</Link></p>
       </div>
     </Content>
