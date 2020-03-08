@@ -2,18 +2,18 @@ import PropTypes from "prop-types"
 import React from "react"
 
 
-const Audio = ({ src, children }) => {
-    return <audio controls src={ src }>
-           { children }
-           </audio>
-}
+class Audio extends React.Component {
+    state = {
+        play: false
+    }
 
-Audio.propTypes = {
-    src: PropTypes.string,
-}
-
-Audio.defaultProps = {
-    src: ``,
+    render() {
+        return (
+            <audio controls src={ this.props.src }>
+                {this.props.children}
+            </audio>
+        )
+    }
 }
 
 export default Audio
