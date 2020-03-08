@@ -8,10 +8,10 @@ import Footer from "../components/footer"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const SecondPage = ({ data }) => (
+const Beluga = ({ data }) => (
   <Layout>
     <SEO title="Beluga Whales" />
-    <Content style={{ marginBottom: "2ex", marginTop: "17ex" }} >
+    <Content style={{ marginBottom: "5ex", marginTop: "17ex" }} >
       <div className="content">
         <h1>Beluga Whales</h1>
         <div style={{ marginBottom: "1.45rem" }}>
@@ -60,4 +60,4 @@ export const pageQuery = graphql`
     }
   }`
 
-export default SecondPage
+export default Beluga
