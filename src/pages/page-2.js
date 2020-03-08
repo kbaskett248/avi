@@ -20,7 +20,7 @@ export const pageQuery = graphql`
   query {
     primaryImage: file(relativePath: { eq: "beluga1.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 300) {
+        fluid(maxWidth: 1024) {
           ...GatsbyImageSharpFluid
         }
       }
