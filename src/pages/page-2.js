@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 
+import Audio from "../components/audio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -12,6 +13,9 @@ const SecondPage = ({ data }) => (
     <p>Welcome to page 2</p>
     <Img fluid={data.primaryImage.childImageSharp.fluid} 
          alt="Beluga whale swimming upside down"/>
+    <Audio src={ data.primaryAudio.publicURL } >
+      <p>Beluga whale echolocation sounds</p>
+    </Audio>
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
@@ -24,6 +28,9 @@ export const pageQuery = graphql`
           ...GatsbyImageSharpFluid
         }
       }
+    },
+    primaryAudio: file(relativePath: { eq: "beluga.ogg" }) {
+      publicURL
     }
   }`
 
