@@ -15,32 +15,38 @@ const Header = () => {
   `)
 
   return (
-    <header
+        <header
       style={{
-        marginBottom: `1.45rem`,
+        position: "fixed",
+        left: 0,
+        top: 0,
+        width: "100%",
+        zIndex: 1
       }}
       id="header"
     >
-      <div
+      <Link
+        to="/"
         style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `1.45rem 1.0875rem`,
+          color: `white`,
+          textDecoration: `none`,
         }}
       >
-        <h1 style={{ margin: 0 }}>
-          <Link
-            to="/"
-            style={{
-              color: `white`,
-              textDecoration: `none`,
-            }}
-          >
-            {data.site.siteMetadata.title}
-          </Link>
-        </h1>
-        <p>{ data.site.siteMetadata.description }</p>
-      </div>
+        <div
+          style={{
+            margin: `0 auto`,
+            maxWidth: 960,
+            padding: `1rem 1rem`,
+          }}
+        >
+          <h1 style={{ margin: 0 }}>
+            
+              {data.site.siteMetadata.title}
+            
+          </h1>
+          { data.site.siteMetadata.description }
+        </div>
+      </Link>
     </header>
   )
 }
