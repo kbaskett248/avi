@@ -16,6 +16,7 @@ const IndexPage = () => (
         </p>
         <p><Link to="/fun-ocean-facts/">Fun Facts about the Ocean</Link></p>
         <p><Link to="/beluga/">Beluga Whales</Link></p>
+        <p><Link to="/ocean-voyager-whale-shark/">The Ocean Voyager Exhibit and Whale Sharks</Link></p>
       </div>
     </Content>
   </Layout>
