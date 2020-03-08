@@ -1,5 +1,9 @@
 import React from "react"
 
+const fmtMSS = (s) => {
+    s = Math.round(s)
+    return (s - (s %= 60)) / 60 + (9 < s ? ':' : ':0') + s
+}
 
 class AudioPlayer extends React.Component {
     state = {
@@ -37,11 +41,20 @@ class AudioPlayer extends React.Component {
 
     render() {
         return (
-            <div>
-                <button onClick={this.togglePlay}>
-                    {this.state.play ? 'Pause' : 'Play'} {this.state.currentTime} / {this.state.duration}
-                </button>
-            </div>
+            <button className="scheme1" 
+                    style={{
+                        display: "block", 
+                        width: "100%", 
+                        minWidth: "16em", 
+                        minHeight: "5ex",
+                        borderWidth: "0",
+                        padding: "1rem 1rem"
+                    }} 
+                    onClick={this.togglePlay}
+             >
+                <div style={{float: "left"}}>{this.state.play ? 'Pause' : 'Play'}</div>
+                <div style={{float: "right"}}>{fmtMSS(this.state.currentTime)} / {fmtMSS(this.state.duration)}</div>
+            </button>
         );
     }
 }

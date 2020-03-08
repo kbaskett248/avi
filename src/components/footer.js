@@ -4,7 +4,9 @@ import footerStyles from "./footer.module.css";
 
 const Footer = ({ children }) => (
   <div className={ footerStyles.footer } id="footer">
-    { children }
+    <div style={{ margin: "0 auto", maxWidth: 960 }} >
+      { children }
+    </div>
   </div>
 )
 
