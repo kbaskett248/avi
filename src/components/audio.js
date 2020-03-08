@@ -45,10 +45,10 @@ class AudioPlayer extends React.Component {
                     style={{
                         display: "block", 
                         width: "100%", 
-                        minWidth: "16em", 
-                        minHeight: "5ex",
+                        minWidth: "16rem", 
+                        minHeight: "3.5rem",
                         borderWidth: "0",
-                        padding: "1rem 1rem"
+                        padding: "0rem 1rem"
                     }} 
                     onClick={this.togglePlay}
              >
