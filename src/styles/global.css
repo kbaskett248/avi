@@ -1,3 +1,17 @@
 html {
   background-color: lavender;
 }
+
+#footer {
+  background-color: rebeccapurple;
+  color: white;
+}
+
+#footer a {
+  color: white;
+}
+
+#header {
+  background-color: rebeccapurple;
+  color: white;
+}

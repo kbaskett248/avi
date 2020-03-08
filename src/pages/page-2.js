@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import Img from "gatsby-image"
 
 import AudioPlayer from "../components/audio"
+import Footer from "../components/footer"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -13,10 +14,13 @@ const SecondPage = ({ data }) => (
     <p>Welcome to page 2</p>
     <Img fluid={data.primaryImage.childImageSharp.fluid} 
          alt="Beluga whale swimming upside down"/>
-    <AudioPlayer src={ data.primaryAudio.publicURL } >
-      <p>Beluga whale echolocation sounds</p>
-    </AudioPlayer>
-    <Link to="/">Go back to the homepage</Link>
+    
+    <Footer>
+      <AudioPlayer src={data.primaryAudio.publicURL} >
+        <p>Beluga whale echolocation sounds</p>
+      </AudioPlayer>
+      <Link to="/">Go back to the homepage</Link>
+    </Footer>
   </Layout>
 )
 
