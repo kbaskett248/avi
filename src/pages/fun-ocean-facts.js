@@ -50,7 +50,7 @@ export const pageQuery = graphql`
         }
       }
     },
-    primaryAudio: file(relativePath: { eq: "ocean-facts.ogg" }) {
+    primaryAudio: file(relativePath: { eq: "ocean-facts.mp3" }) {
       publicURL
     }
   }`

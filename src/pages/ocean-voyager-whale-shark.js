@@ -84,7 +84,7 @@ export const pageQuery = graphql`
         }
       }
     },
-    primaryAudio: file(relativePath: { eq: "ocean-voyager-exhibit.ogg" }) {
+    primaryAudio: file(relativePath: { eq: "ocean-voyager-exhibit.mp3" }) {
       publicURL
     }
   }`

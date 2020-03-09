@@ -56,7 +56,7 @@ export const pageQuery = graphql`
         }
       }
     },
-    primaryAudio: file(relativePath: { eq: "beluga.ogg" }) {
+    primaryAudio: file(relativePath: { eq: "beluga.mp3" }) {
       publicURL
     }
   }`
