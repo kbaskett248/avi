@@ -1,9 +1,12 @@
 html {
   background-color: lavenderblush;
+  font: 112.5%/1.45em palatino, garamond, georgia, serif;
 }
 
 body {
   color: #231D24;
+  font-family: palatino, garamond, georgia, serif;
+  font-weight: normal;
 }
 
 a {
