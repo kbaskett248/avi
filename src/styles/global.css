@@ -1,22 +1,48 @@
 html {
-  background-color: lavender;
+  background-color: lavenderblush;
 }
 
-#footer {
-  background-color: rebeccapurple;
-  color: white;
+body {
+  color: #231D24;
 }
 
-#footer a {
-  color: white;
+a {
+  color: rgb(206, 0, 206);
+}
+a:visited {
+  color: rgb(90, 0, 105);
+}
+a:hover {
+  color: rgb(255, 0, 255);
 }
 
-#header {
-  background-color: rebeccapurple;
-  color: white;
+#header a {
+  color: #D6AEDD;
+  text-decoration: none;
 }
 
 .scheme1 {
-  background-color: rebeccapurple;
-  color: white;
+  background-color: #D6AEDD;
+  color: #231D24;
+}
+
+.sanserif {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.fs-smaller {
+  font-size: smaller;
+}
+
+.fs-larger {
+  font-size: larger;
+}
+
+.color-dark {
+  color: #231D24;
 }

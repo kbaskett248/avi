@@ -45,19 +45,24 @@ class AudioPlayer extends React.Component {
 
     render() {
         return (
-            <button className="scheme1" 
+            <button className="scheme1 sanserif bold color-dark" 
                     style={{
                         display: "block", 
                         width: "100%", 
                         minWidth: "16rem", 
                         minHeight: "3.5rem",
                         borderWidth: "0",
-                        padding: "0rem 1rem"
+                        padding: "0rem 1rem",
+                        cursor: "pointer"
                     }} 
                     onClick={this.togglePlay}
              >
-                <div style={{float: "left"}}>{this.state.play ? 'Pause' : 'Play'}</div>
-                <div style={{float: "right"}}>{fmtMSS(this.state.currentTime)} / {fmtMSS(this.state.duration)}</div>
+                <div style={{ float: "left" }} className="fs-larger" >
+                    {this.state.play ? 'Pause' : 'Play'}
+                </div>
+                <div style={{float: "right"}} className="fs-smaller">
+                    {fmtMSS(this.state.currentTime)} / {fmtMSS(this.state.duration)}
+                </div>
             </button>
         );
     }

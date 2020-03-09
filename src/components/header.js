@@ -14,7 +14,7 @@ const Header = () => {
   `)
 
   return (
-        <header
+    <header
       style={{
         position: "fixed",
         left: 0,
@@ -22,15 +22,9 @@ const Header = () => {
         width: "100%",
         zIndex: 1
       }}
-      id="header"
+      className="scheme1"
     >
-      <Link
-        to="/"
-        style={{
-          color: `white`,
-          textDecoration: `none`,
-        }}
-      >
+      <Link to="/" className="scheme1" style={{ textDecoration: "none" }}>
         <div
           style={{
             margin: `0 auto`,
@@ -38,12 +32,12 @@ const Header = () => {
             padding: `1rem 1rem`,
           }}
         >
-          <h1 style={{ margin: 0 }}>
-            
+          <h1 style={{ margin: 0 }} className="color-dark">
               {data.site.siteMetadata.title}
-            
           </h1>
-          { data.site.siteMetadata.description }
+          <span className="color-dark">
+            { data.site.siteMetadata.description }
+          </span>
         </div>
       </Link>
     </header>
