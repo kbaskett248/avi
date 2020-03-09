@@ -22,6 +22,7 @@ class AudioPlayer extends React.Component {
     componentWillUnmount() {
         if (this.state.play) {
             this.audio.pause()
+            this.audio.src = ""
         }
         this.audio.removeEventListener('canplaythrough', this.updateDuration)
         this.audio.removeEventListener('ended', () => this.setState({ play: false }));
